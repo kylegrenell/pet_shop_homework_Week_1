@@ -41,7 +41,7 @@ end
 
 def pets_by_breed(pet_shop, breed) 
   pets_by_breed = []
- 
+
   for pet in pet_shop[:pets]
     pets_by_breed << pet if pet[:breed] == breed
   end
@@ -74,11 +74,11 @@ end
 
 def find_pet_by_name(pet_shop, name) 
   for pet in pet_shop[:pets]
-      if ( name == pet[:name] ) 
-        return pet 
-      end
+    if ( name == pet[:name] ) 
+      return pet 
+    end
   end
- return nil 
+  return nil 
 end
 #looking for 'Fred', no key value 'Fred'
 #will return first key value 'sir percy' if nil wasn't returned. Nil is expected so it passes. 
@@ -128,10 +128,8 @@ def customer_can_afford_pet(customer, new_pet)
     return false
   else
     return true
+  end
+  
 end
-
-
 # Couldn't manage to pass the last test.
 
-
-end
